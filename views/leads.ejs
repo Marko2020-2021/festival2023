@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      body { background-color: rgba(248, 5, 159, 0.983); margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; } 
+      /* body { background-image: url('luces.gif') } */
+
+      #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      #input:focus { outline: none; }
+      #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+    
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages > li { padding: 0.5rem 1rem; }
+      #messages > li:nth-child(odd) { background: #efefef; }
+    </style>
+  </head>
+  
+  <body>
+
+    <ul id="messages"></ul>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- <% console.log('acato') %> -->
+    
+    <script>      
+      var socket = io();
+    </script>
+    <script>      
+      ///socket.emit('chat message', 'al inicio1');  
+      let r=0
+      
+      socket.on('chat message', (msg)=> {
+        {
+          const ff = 'TT'+JSON.stringify(msg)+'GG'
+   console.log('delphi',ff)
+          var V1 = msg.split(':')[1].split(';')[0];
+          var V2 = msg.split(':')[2].split(';')[0]; 
+          var V3 = msg.split(':')[3].split(';')[0]; 
+          var V4 = msg.split(':')[4].split(';')[0]; 
+          var V5 = msg.split(':')[5].split(';')[0]; 
+          var V6 = msg.split(':')[6].split(';')[0]; 
+          var V7 = msg.split(':')[7].split(';')[0]; 
+          var V8 = msg.split(':')[8].split(';')[0]; 
+          var V9 = msg.split(':')[9].split(';')[0]; 
+          var V10 = msg.split(':')[10].split(';')[0]; 
+          var N1 = msg.split(':')[11].split(';')[0];
+          var N2 = msg.split(':')[12].split(';')[0]; 
+          var N3 = msg.split(':')[13].split(';')[0]; 
+          var N4 = msg.split(':')[14].split(';')[0]; 
+          var N5 = msg.split(':')[15].split(';')[0]; 
+          var N6 = msg.split(':')[16].split(';')[0]; 
+          var N7 = msg.split(':')[17].split(';')[0]; 
+          var N8 = msg.split(':')[18].split(';')[0]; 
+          var N9 = msg.split(':')[19].split(';')[0]; 
+          var N10 = msg.split(':')[20].split(';')[0]; 
+          
+          document.getElementById("demo1").innerHTML = N1;
+          document.getElementById("demo2").innerHTML = V1;
+          document.getElementById("demo3").innerHTML = N2;
+          document.getElementById("demo4").innerHTML = V2;
+          document.getElementById("demo5").innerHTML = N3;
+          document.getElementById("demo6").innerHTML = V3;
+          document.getElementById("demo7").innerHTML = N4;
+          document.getElementById("demo8").innerHTML = V4;
+          document.getElementById("demo9").innerHTML = N5;
+          document.getElementById("demo10").innerHTML = V5;
+          document.getElementById("demo11").innerHTML = N6;
+          document.getElementById("demo12").innerHTML = V6;
+          document.getElementById("demo13").innerHTML = N7;
+          document.getElementById("demo14").innerHTML = V7;
+          document.getElementById("demo15").innerHTML = N8;
+          document.getElementById("demo16").innerHTML = V8;
+          document.getElementById("demo17").innerHTML = N9;
+          document.getElementById("demo18").innerHTML = V9;
+          document.getElementById("demo19").innerHTML = N10;
+          document.getElementById("demo20").innerHTML = V10;
+        }
+          r=r+1
+      });
+      
+    </script>
+<!-- <img class="logo" src="http://localhost:3000/luces.gif" alt="My_Logo"> -->
+
+<!-- <img src="luces.gif"  style="position:relative; left:0px; top:0px; width:160px; height: 200px;"/> -->
+
+<!-- <div class="container">
+  <img src="./luces.jpg" alt="Snow" style="width:100%;">
+  <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>
+</div> -->
+
+
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size:80px;
+    background-color: rgba(182, 204, 221, 0.667);
+  }
+  
+  td, th {
+    border: 11px solid #15436b;
+    text-align: center;
+    padding: 8px;
+    font-size:80px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(215, 197, 197, 0.667);
+    font-size:80px;
+  }
+  </style>
+
+<div class="container" style="position:relative; height:100%; width:100%;">
+  <!-- <img src="https://cahat2.onrender.com/luces.gif" style="position:absolute; height:100%; width:100%;"> -->
+  <img src="https://mario.up.railway.app/luces.gif" style="position:absolute; height:100%; width:100%;">
+
+
+
+
+
+
+  
+
+
+
+
+<h1 style="position:relative; top:0px;color:rgb(9, 255, 0);font-size:40px;"><% leads %></h1>
+<h1 style="position:relative; top:0px;color:rgb(9, 255, 0);font-size:40px;">Festival Viña 2023</h1>
+<table style="position:relative; top:0px;color:rgb(9, 255, 0);font-size:80px;">
+
+  <tr>
+    <th style="color:rgb(0, 0, 0);font-size:60px;">Jurado</th>
+    <th style="color:rgb(0, 2, 0);font-size:60px;">Voto</th>
+  </tr>
+  <tr>
+    <td id="demo1" style="color:blue;font-size:80px;">  <%= leads[0] %>  </td>
+    <td id="demo2" style="color:rgb(255, 255, 255);font-size:100px;"><%= leads[1] %></td>
+  </tr>
+  <tr>
+    <td id="demo3" style="color:blue;font-size:80px;">  <%= leads[2] %>  </td>
+    <td id="demo4" style="color:rgb(255, 255, 255);font-size:100px;">  <%= leads[3] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo5" style="color:blue;font-size:80px;">  <%= leads[4] %>  </td>
+    <td id="demo6" style="color:rgb(253, 253, 254);font-size:100px;">  <%= leads[5] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo7" style="color:blue;font-size:80px;">  <%= leads[6] %>  </td>
+    <td id="demo8" style="color:rgb(255, 255, 255);font-size:100px;">  <%= leads[7] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo9" style="color:blue;font-size:80px;">  <%= leads[8] %>  </td>
+    <td id="demo10" style="color:rgb(255, 255, 255);font-size:100px;">  <%= leads[9] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo11" style="color:blue;font-size:80px;">  <%= leads[10] %>  </td>
+    <td id="demo12" style="color:rgb(252, 252, 252);font-size:100px;">  <%= leads[11] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo13" style="color:blue;font-size:80px;">  <%= leads[12] %>  </td>
+    <td id="demo14" style="color:rgb(255, 252, 252);font-size:100px;">  <%= leads[13] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo15" style="color:blue;font-size:80px;">  <%= leads[14] %>  </td>
+    <td id="demo16" style="color:rgb(255, 255, 255);font-size:100px;">  <%= leads[15] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo17" style="color:blue;font-size:80px;">  <%= leads[16] %>  </td>
+    <td id="demo18" style="color:rgb(251, 251, 255);font-size:100px;">  <%= leads[17] %>  </td>
+  </tr>
+  <tr>
+    <td id="demo19" style="color:blue;font-size:80px;">  <%= leads[18] %>  </td>
+    <td id="demo20" style="color:rgb(255, 255, 255);font-size:100px;">  <%= leads[19] %>  </td>
+  </tr>
+</table>
+</div>
+
+
+
+
+</div>
+
+
+
+  </body>
+</html>
